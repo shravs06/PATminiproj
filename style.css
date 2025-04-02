@@ -1,0 +1,104 @@
+/* General body and container styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f1f8ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Main container styles */
+.container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px 25px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+/* Heading styles */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Input field */
+input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+/* Buttons */
+button {
+    width: 85%;
+    padding: 12px;
+    margin: 5px 0;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Info box to display results */
+.info-box {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #e9f7ff;
+    border-radius: 10px;
+    border: 1px solid #00c6ff;
+    text-align: left;
+}
+
+/* Hidden by default until data is loaded */
+.hidden {
+    display: none;
+}
+
+/* 5-Day Forecast grid container */
+#forecast-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 12px;
+    margin-top: 20px;
+}
+
+/* Individual forecast card */
+.forecast-item {
+    padding: 12px;
+    background: #eafaff;
+    border-radius: 15px;
+    border: 1px solid #00f2fe;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.forecast-item:hover {
+    transform: scale(1.05);
+}
+
+/* Weather icons in forecast */
+.forecast-item img {
+    width: 50px;
+    height: 50px;
+    margin-top: 8px;
+}
+
+/* Current weather styles */
+.weather-item {
+    margin-bottom: 10px;
+}
